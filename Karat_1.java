@@ -8,43 +8,8 @@ public class Karat_1 {
 		String a = scan.nextLine();
 		System.out.print("y : ");
 		String b = scan.nextLine();
-		String s = "";
-        if(a.charAt(0) == '-')
-        {
-        	if(b.charAt(0) == '-') 
-        	{
-        	    a = a.substring(1,a.length());
-        	    b = b.substring(1,b.length());
-        	    s = mul(a,b);
-        	    System.out.println("Result : "+s);
-        	    
-        	}
-        	else
-        	{
-        		a = a.substring(1,a.length());	
-        		s = mul(a,b);
-        		System.out.println("Result : "+"-"+s);
-        	}
-        	
-        }
-        else
-        {
-        	if(b.charAt(0) == '-')
-        	{	
-        		b = b.substring(1,b.length());
-        		s = mul(a,b);
-        		System.out.println("Result : "+"-"+s);
-        	
-        	}
-        	else 
-           	{
-        	    a = a.substring(0,a.length());
-        	    b = b.substring(0,b.length());
-        	    s = mul(a,b);
-        	    System.out.println("Result : "+s);	
-           	}
-        }
-      scan.close();
+		System.out.println("result" +(mul(a,b)); 
+scan.close();
 	}
     static String mul(String A, String B)
     {
